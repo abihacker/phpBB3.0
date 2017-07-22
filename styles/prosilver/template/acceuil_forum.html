@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}" xml:lang="{S_USER_LANG}">
+<head>
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = '{LA_JUMP_PAGE}:';
+	var on_page = '{ON_PAGE}';
+	var per_page = '{PER_PAGE}';
+	var base_url = '{A_BASE_URL}';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	<!-- IF S_USER_PM_POPUP and S_NEW_PM -->
+		var url = '{UA_POPUP_PM}';
+		window.open(url.replace(/&amp;/g, '&'), '_phpbbprivmsg', 'height=225,resizable=yes,scrollbars=yes, width=400');
+	<!-- ENDIF -->
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="{T_SUPER_TEMPLATE_PATH}/styleswitcher.js"></script>
+<script type="text/javascript" src="{T_SUPER_TEMPLATE_PATH}/forum_fn.js"></script>
+
+<link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="{T_STYLESHEET_LINK}" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="{T_THEME_PATH}/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="{T_THEME_PATH}/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="{T_THEME_PATH}/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+<!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
+	<link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<!-- ENDIF -->
+</head>
+
+<!-- INCLUDE overall_header.html -->
+<div class="fixeMarge"><section itemprop="about" class="SectionSynopsis">
+
+ <!--mettre une image sap a droite du menu d'introduction-->
+<div class="navbar">
+			<!--<div class="inner"><span class="corners-top"><span></span></span>-->
+			
+	
+	<!--<figure class="figure-center"><img class="ImgCliquable figure-img-caption" src="images/sap.jpg" alt="en route vers le sap"></li></figure>-->
+  </ul>
+  
+<header class="EnteteTitres">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><h1 class="titre-article" itemprop="name">Présentation générale de l'ERP SAP</h1>
+</header><nav style="width: 380px;" class="nav-sommaire fixed2" role="navigation">
+<header><h1 class="TitreHeader StopArrondi ToggleGecko"><img class="ToggleImgPlier" title="Plier" alt="Plier" src="images/langfr-280px-SAP_2011_logo.svg.png">
+<img class="ToggleImgDeplier" title="Déplier" alt="Déplier" src="images/langfr-280px-SAP_2011_logo.svg.png" style="display:none;"></h1></header>
+<!--<ul style="overflow-y: auto;" id="nav_sommaire_ul_principal" class="nav-sommaire-ul">
+    <li><a class="summaryIndent0" href="#L0">Introduction</a></li>
+    <li><a class="summaryIndent0" href="#LI">I. SAP C'est quoi ? Pour qui ?</a></li>
+    <li><a class="summaryIndent0" href="#LII">II. Historique de versions</a></li>
+    <li><a class="summaryIndent0" href="#LIII">III. Puzzle de modules SAP</a><ul class="nav-sommaire-ul IndentationIII">
+      
+      
+      
+      <li><a class="summaryIndent1" href="#LIII-A">III-A. Gestion comptable</a></li>
+      <li><a class="summaryIndent1" href="#LIII-B">III-B. Logistique</a></li>	
+      <li><a class="summaryIndent1" href="#LIII-C">III-C. Ressources humaines</a></li>
+      <li><a class="summaryIndent1" href="#LIII-D">III-D. Autres modules transverses</a></li>
+    </ul></li>
+  </ul></nav>
+  </div>
+  <br/>-->
+   <!--<div class="navbar">-->
+			<!--<div class="inner"><span class="corners-top"><span></span></span>-->
+  
+			</div>
+			</div>
+<div>
+   <ul class="linklist rightside">
+	<li class="icon-rules">
+	
+<img src="images/sap.jpg" class="img-responsive" alt="EN ROUTE VERS LE SAP" width="205" height="205"></li>
+</ul>
+  </div>			
+<!--bienvenue {PSEUDO}-->
+
+<!--<div class="navbar">-->
+			<div class="inner"><span class="corners-top"><span></span></span>
+ 
+			
+<br/><br/>
+<div class="fixeMarge"><section itemprop="about" class="SectionSynopsis">
+    <p>
+			<B><strong>Ce forum</strong></B>  s'adresse à toutes les personnes novices susceptibles de 
+s'intéresser à l'ERP SAP et souhaitant en apprendre d'avantage sur la 
+couverture fonctionnelle de SAP.
+		</p>
+		<p>
+				Il nous suffit de s'aventurer dans quelques entreprises où même sur 
+Internet pour croiser le terme ERP ou encore SAP. Pour ceux qui se 
+demandent ce que c'est, en quoi cela consiste en particulier concernant 
+l'ERP spécifique SAP, nous allons dans un premier temps expliquer ce 
+qu'est SAP et sur quel marché ce progiciel se positionne. Dans un second
+ temps, nous ferons un bref résumé de l'historique des versions de cet 
+outil afin d'en dégager l'évolution. Puis, nous détaillerons afin de 
+parcourir les fonctionnalités couvertes par SAP, chaque module. Enfin, 
+nous effectuerons notre première connexion à SAP afin d'en découvrir 
+l'interface.
+			</p>
+
+			 </div>
+    
+		<h1 class="TitreSection0" id="LI">I. SAP C'est quoi ? Pour qui ?<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h1><div class="BlocSection0">
+      
+      <ul class="ListeDVP">
+        <li>
+          <span class="mot_souligne">
+            <b>SAP c'est quoi ?</b>
+          </span>
+        </li>
+      </ul>
+      <p>
+				Derrière ces 3 lettres, il se cache en vérité 2 choses :<br></p>
+      <ul class="ListeDVP">
+        <li>L'éditeur de l'outil, SAP Aktiengesellschaft</li>
+        <li>Le progiciel de gestion intégré SAP.</li>
+      </ul>
+      <p>
+				Remarque : Tout au long de cet article, nous utiliserons le terme 
+ERP (Enterprise Ressource Planning en anglais ou Progiciel de Gestion 
+Intégré en Français).
+			</p>
+      <p>
+				SAP est donc l'ERP vendu par cette société.
+			</p>
+      <ul class="ListeDVP">
+        <li>
+          <span class="mot_souligne">
+            <b>Pour qui ?</b>
+          </span>
+        </li>
+      </ul>
+      <p>
+				SAP se positionne selon 2 critères : le nombre total d'effectif 
+d'une entreprise et/ou un secteur. SAP propose des solutions spécifiques
+ grands comptes et multinationnales mais aussi PME-PMI. Concernant les 
+secteurs visés, ci-dessous un aperçu des possibilités :<br></p>
+      <div class="TextAlign-center"><table class="tableau" style="border-width:1px;width:80%;" border="1">
+        <tbody><tr>
+          <td class="colonne" style="text-align:center;">Banque</td>
+          <td class="colonne" style="text-align:center;">Défense et sécurité</td>
+          <td class="colonne" style="text-align:center;">Santé</td>
+          <td class="colonne" style="text-align:center;">Enseignement supérieur et recherche</td>
+          <td class="colonne" style="text-align:center;">Assurance</td>
+          <td class="colonne" style="text-align:center;">Secteur public</td>
+        </tr>
+        <tr>
+          <td class="colonne" style="text-align:center;">Aérospacial</td>
+          <td class="colonne" style="text-align:center;">Equipements industriels</td>
+          <td class="colonne" style="text-align:center;">Automobile</td>
+          <td class="colonne" style="text-align:center;">Chimie</td>
+          <td class="colonne" style="text-align:center;">Grandes consommations</td>
+          <td class="colonne" style="text-align:center;">Science de la vie</td>
+        </tr>
+        <tr>
+          <td class="colonne" style="text-align:center;">Industries de transformation</td>
+          <td class="colonne" style="text-align:center;">Autres technologies</td>
+          <td class="colonne" style="text-align:center;">Industries d'extraction</td>
+          <td class="colonne" style="text-align:center;">Industrie d'hydrocarbures</td>
+          <td class="colonne" style="text-align:center;">Médias</td>
+          <td class="colonne" style="text-align:center;">Services prestataires</td>
+        </tr>
+        <tr>
+          <td class="colonne" style="text-align:center;">Eau et énergies</td>
+          <td class="colonne" style="text-align:center;">Télécoms</td>
+          <td class="colonne" style="text-align:center;">Distribution</td>
+          <td class="colonne" style="text-align:center;">BTP</td>
+          <td class="colonne" style="text-align:center;">Logistique et transports</td>
+          <td class="colonne" style="text-align:center;">Commerce de gros</td>
+        </tr>
+      </tbody></table></div>
+    </div>
+		<h2 class="TitreSection0" id="LII">  Historique de versions<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h1>
+		  <div class="BlocSection0">
+      
+      <p>
+				Voici en bref, afin de ne pas être perdu sur certains termes employés, les différentes versions de SAP au cours du temps :<br></p>
+      <ul class="ListeDVP">
+        <li>SAP R/1 : version de développement</li>
+        <li>SAP R/2 : version opérationnelle et stable de l'ERP sur gros systèmes (architecture mainframe)</li>
+        <li>SAP R/3 : décliné en plusieurs sous-versions de 2.1 à 4.7. 
+Sachant que la version SAP R/3 4.6c se trouve facilement en entreprise 
+actuellement. Cette version R/3 est en architecture dite Client/Serveur</li>
+        <li>SAP ECC : ou ERP Central Component que nous pouvons trouver en version 5 et 6, très utilisée aussi en entreprise.</li>
+      </ul>
+      <p>
+				Le vrai big bang architectural et technologique s'est effectué entre
+ les versions R/2 et R/3 de SAP : des gros systèmes vers du 
+client/serveur. Une seconde évolution importante est réalisée entre R/3 
+et ECC. SAP repose une technologie appelée NetWeaver basée sur du client
+ léger, en particulier un portail web avec tous les avantages connus de 
+disposer d'un outil en ligne via le web. NetWeaver est une plateforme 
+d'intégration des applications SAP incluant l'arcihtecure dite SOA pour 
+Service Oriented Architecture. De plus, SAP Netweaver permet un 
+"dialogue" simplifié avec les technologies DotNet, Java EE et Websphere.
+			</p>
+    </div>
+    
+		<h1 class="TitreSection0" id="LIII">   Puzzle de modules SAP<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h1><div class="BlocSection0">
+      
+      <p>
+				Comme tout progiciel, SAP est modulaire ce qui signifie qu'il est 
+possible d'intégrer tout ou partie de l'ERP. Il existe 3 grands 
+périmètres de gestion couverts par SAP :
+			</p>
+      <ul class="ListeDVP">
+        <li>Gestion comptable</li>
+        <li>Logistique</li>
+        <li>Ressources humaines</li>
+      </ul>
+      
+		<h2 class="TitreSection1" id="LIII-A">   Gestion comptable<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h2><div class="BlocSection1">
+        
+        <p>
+					La gestion comptable s'effectue à travers plusieurs modules : "FI" 
+pour "Financial", "CO" pour "Controling". Sur Internet ou encore lors de
+ conversation, il est quasiment inévitable d'entendre "FI/CO" car ce 
+sont deux modules complexes que l'on associe souvent. Nous allons les 
+découvrir dans le détail via leurs "sous-modules" :<br></p>
+        <div class="titreliste">Module FI : Financial</div><ul class="ListeDVP">
+          <li>FI-GL pour General Ledger soit Comptabilité générale,</li>
+          <li>FI-AA pour Asset Accounting soit Gestion ou Comptabilité des immobilisations, </li>
+          <li>FI-AR pour  Accounts Receivable soit Comptabilité clients,</li>
+          <li>FI-AP pour Accounts Payable soit Comptabilité fournisseurs,</li>
+          <li>FI-TR pour Treasury soit Gestion de trésorerie et paiements,</li>
+          <li>...</li>
+        </ul>
+        <div class="titreliste">Module CO : Controlling</div><ul class="ListeDVP">
+          <li>Gère les typdes d'activités,</li>
+          <li>Gère le contrôle des frais généraux,</li>
+          <li>Gère les ratios statistiques,</li>
+          <li>Gère les ordres de frais généraux,  </li>
+          <li>Gère la comptabilité analytique des centres,</li>
+          <li>Gère  la comptabilité des natures comptables,</li>
+          <li>...</li>
+        </ul>
+        <p>
+					Dans les dernières versions de SAP (ECC 5 et 6), les modules FI/CO 
+ont évolué. Cette évolution est portée par le terme "New Ledger" qui 
+révolutionne le système comptable de SAP. Afin de rester dans un 
+français compréhensible, cette évolution impacte au niveau des divers 
+bilans, de l'intégration des centres de profits et de segments.
+				<br></p>
+        <div class="div-figure"><figure class="figure-center"><a data-rel="lightbox[article]" href="#"><img class="ImgCliquable figure-img-caption" src="images/capture1.png" alt="" height="325" width="247"></a></figure></div>
+		<!--<img src="images/sap.jpg" class="img-responsive" alt="EN ROUTE VERS LE SAP">-->
+      </div>
+      
+		<h2 class="TitreSection1" id="LIII-B">   Logistique<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h2><div class="BlocSection1">
+        
+        <p>
+					La gestion de la logistique s'effectue à travers plusieurs modules :
+ "MM" pour "Material Management", "PP" pour "Production Planning", "SD" 
+pour "Sales and Distribution" et "PS" pour "Project Systems". Si nous 
+effectuons un zoom sur chacun de ces modules, voici les principales 
+fonctionnalités couvertes :<br></p>
+        <div class="titreliste">Module MM : Matérial Management</div><ul class="ListeDVP">
+          <li>Gère les achats d'articles,</li>
+          <li>Gère les stocks d'articles,</li>
+          <li>Gère le contrôle des factures d'achats,</li>
+          <li>Gère les inventaires d'articles,</li>
+          <li>Gère tout ce qui se rapporte aux mouvements entrées/sorties/transferts de stocks</li>
+          <li>Gère les besoins prévisionnels d'articles et donc les réapprovisionnements,</li>
+          <li>...</li>
+        </ul>
+        <p>
+          <br>
+        </p>
+        <div class="titreliste">Module PP : Production Planning</div><ul class="ListeDVP">
+          <li>Gère la planification de production,</li>
+          <li>Gère le calcul des besoins (appelé aussi MRP pour Material Requirement Planning),</li>
+          <li>Gère le contrôle de la fabrication,</li>
+          <li>Gère les gammes et nomenclatures d'articles,</li>
+          <li>Gère la planification des capacités,</li>
+          <li>Gère le suivi de production,</li>
+          <li>...</li>
+        </ul>
+        <div class="titreliste">Module SD : Sales and Distribution</div><ul class="ListeDVP">
+          <li>Gère les appels d'offre et offres,</li>
+          <li>Gère les contrats,</li>
+          <li>Gère la facturation,</li>
+          <li>Gère les livraisons,</li>
+          <li>Gère les commandes clients,</li>
+          <li>Gère les prix,</li>
+          <li>...</li>
+        </ul>
+        <div class="titreliste">Module PS : Project Systems</div><ul class="ListeDVP">
+          <li>Couplage fort avec les modules FI-AA, FI-CO, PP et PM,</li>
+          <li>Permet de structurer et suivre des projets (affaires), ...</li>
+        </ul>
+        <p>
+          <br>
+        </p>
+        <div class="div-figure"><figure class="figure-center"><a data-rel="lightbox[article]" href="#"><img class="ImgCliquable figure-img-caption" src="images/capture2.png" alt="" height="325" width="197"></a></figure></div>
+      </div>
+      
+		<h2 class="TitreSection1" id="LIII-C">  Ressources humaines<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h2><div class="BlocSection1">
+        
+        <p>
+					La gestion des ressources humaines s'effectue au travers d'un <b>module</b> appelé "<b>HR</b>" pour "<b>Human Ressources</b>". Ce module permet de :<br></p>
+        <div class="titreliste">Module HR : Human Resources</div><ul class="ListeDVP">
+          <li>Gérer chaque employé d'un point de vue administratif (données de base),</li>
+          <li>Gérer les recrutements (données de base), suivre tout le recrutement dans sa durée de vie,</li>
+          <li>Gérer les évolution du personnel,</li>
+          <li>Gérer les paies, les frais de déplacements,</li>
+          <li>Gérer les formations,</li>
+          <li>Gérer le suivi du temps de travail,</li>
+          <li>...</li>
+        </ul>
+        <p>
+          <br>
+        </p>
+        <div class="div-figure"><figure class="figure-center"><a data-rel="lightbox[article]" href="#"><img class="ImgCliquable figure-img-caption" src="images/capture3.png" alt="" height="325" width="232"></a></figure></div>
+      </div>
+      
+		<h2 class="TitreSection1" id="LIII-D">  Autres modules transverses<a class="HautPage" href="#" title="Haut de page">&#9650;</a></h2><div class="BlocSection1">
+        
+        <p>
+					Pour compléter cette panoplie de fonctionnalités, d'autre modules 
+transverses existent. Concernant les modules transverses Gestion 
+comptable, nous disposons de ce qui suit : <br></p>
+        <div class="titreliste">Modules transverses Gestion comptable</div><ul class="ListeDVP">
+          <li>Le module "IM" pour Investments Management qui permet de gérer les ordres de maintenance, les feuilles de temps, BW, ... </li>
+          <li>Le module "TR" pour Treasury qui gère les flux de trésorerie, ...</li>
+        </ul>
+        <div class="titreliste">Modules transverses Logistiques</div><ul class="ListeDVP">
+          <li>Le module "PM" soit "Plant Maintenance" c'est-à-dire 
+gestion de la maintenance avec tout ce que cela implique comme des 
+demandes d'intervention, la gestion des coûts de maintenance, de 
+l'historique, ...</li>
+          <li>Le module "CS" soit "Customer Services" qui est lui-même rattaché à PM.</li>
+        </ul>
+        <p><span class="mot_souligne">	Remarque :</span> D'autres modules, sous-modules existent mais nous ne rentrerons pas dans ce niveau de détail.
+		     pour plus de renseignement rendez vous sur le site du <a href="www.sap.com">SAP</a>  
+				</p>
+      </div>
+    </div>
+    
+
+
+</div>
+  <section style="margin-left: 405px; margin-top: 20px; clear: none;" class="articleBody"><p>Vous avez aimé ce forum?&nbsp;? Alors partagez-le en cliquant sur les boutons suivants&nbsp;: <a 
+    title="Viadeo" href="http://www.viadeo.com/speechsap" rel="nofollow"><img alt="viadeo" src="images/kitbm-viadeo.png">viadeo</a>&nbsp;
+	</a>&nbsp;<a title="Twitter" href="http://twitter.com/speechsap" rel="nofollow"><img alt="Twitter" src="images/kitbm-
+	twitter.png">twitter</a>&nbsp;<a title="Facebook" href="http://www.facebook.com/speechsap" rel="nofollow"><img alt="Facebook" src="images/kitbm-facebook.png">facebook</a>&nbsp;
+	</a>&nbsp;<script src="Pr%C3%A9sentation%20g%C3%A9n%C3%A9rale%20de%20l%27ERP%20SAP_fichiers/in.js" type="text/javascript"> lang: fr_FR</script>
+			<span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;">
+			<span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;">
+			<span id="li_ui_li_gen_1487526297247_1"><a id="li_ui_li_gen_1487526297247_1-link" href="javascript:void(0);">
+			<span id="li_ui_li_gen_1487526297247_1-logo">in</span><span id="li_ui_li_gen_1487526297247_1-title">
+			<span id="li_ui_li_gen_1487526297247_1-mark"></span><span id="li_ui_li_gen_1487526297247_1-title-text">Partager</span>
+			</span></a></span></span></span><script type="IN/Share+init" data-url="$url"></script>&nbsp;</p></section>
+</article>
+</div>
+</div>
+
+<!-- INCLUDE overall_footer.html -->
+
+

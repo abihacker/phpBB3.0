@@ -1,0 +1,42 @@
+<!-- IF S_SELECT_SORT_DAYS and not S_DISPLAY_ACTIVE -->
+<div class="dropdown-container dropdown-button-control sort-tools">
+	<span title="{L_SORT_OPTIONS}" class="button icon-button sort-icon dropdown-trigger dropdown-select"></span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<ul class="dropdown-contents">
+
+	<form method="post" action="{S_FORUM_ACTION}">
+		<fieldset class="display-options">
+	<!-- IF not S_IS_BOT -->
+			<label>{L_DISPLAY_TOPICS}{L_COLON} {S_SELECT_SORT_DAYS}</label>
+			<label>{L_SORT_BY} {S_SELECT_SORT_KEY}</label>
+			<label>{S_SELECT_SORT_DIR}</label>
+			<input type="submit" name="sort" value="{L_GO}" class="button2" />
+	<!-- ENDIF -->
+		</fieldset>
+	</form>
+	<hr />
+		</ul>
+	</div>
+</div>
+<!-- ENDIF -->
+<!-- IF S_NUM_POSTS > 1 or .pagination -->
+<div class="dropdown-container dropdown-button-control sort-tools">
+	<span title="{L_SORT_OPTIONS}" class="button icon-button sort-icon dropdown-trigger dropdown-select"></span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<ul class="dropdown-contents">
+	<form id="viewtopic" method="post" action="{S_TOPIC_ACTION}">
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<!-- IF not S_IS_BOT -->
+		<label>{L_DISPLAY_POSTS}{L_COLON} {S_SELECT_SORT_DAYS}</label>
+		<label>{L_SORT_BY} {S_SELECT_SORT_KEY}</label> <label>{S_SELECT_SORT_DIR}</label>
+		<input type="submit" name="sort" value="{L_GO}" class="button2" />
+		<!-- ENDIF -->
+	</fieldset>
+	</form>
+	<hr />
+		</ul>
+	</div>
+</div>
+<!-- ENDIF -->

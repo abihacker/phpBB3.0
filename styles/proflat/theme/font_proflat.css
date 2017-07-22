@@ -1,0 +1,317 @@
+/*  phpBB3 proflat Sheet
+------------------------------------------------------------------------------------------
+	Font proflat by Mazeltof ( http://www.phpbb-fr.com/customise/db/author/mazeltof/ )
+	Inspired from Font Awesome 4.6.3 by @davegandy ( http://fontawesome.io )
+------------------------------------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'font-proflat';
+  src:  url('fonts/font-proflat.eot?1l4m2o');
+  src:  url('fonts/font-proflat.eot?1l4m2o#iefix') format('embedded-opentype'),
+    url('fonts/font-proflat.ttf?1l4m2o') format('truetype'),
+    url('fonts/font-proflat.woff?1l4m2o') format('woff'),
+    url('fonts/font-proflat.svg?1l4m2o#font-proflat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+blockquote:before,
+.arrow-up:before,
+.arrow-down:before,
+.arrow-left:before,
+.arrow-right:after,
+.icon-button:before,
+.icon-button:after,
+.button:after,
+a.subforum:before,
+.topiclist .icon:before,
+.topiclist .icon:after,
+a.feed-icon-forum:before,
+.imageset:before,
+.small-icon[class*="icon-"] a:before,
+.post-notice:before,
+.dropdown-extended a.mark_read:before,
+.pagination li.next a:before,
+.pagination li.page-jump a:before,
+.pagination li.previous a:before,
+.contact-icon[class*="-icon"]:before,
+.socialicon a:before,
+.responsive-search a:before,
+.clone [class*="icon-"]:before,
+.clone [class*="-icon"]:before,
+a.top:before,
+a.top2:before {
+    font-family: font-proflat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-right: 3px;
+	speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Arrow links  */
+a.arrow-up:before											{ content: "\e91b"; }
+a.arrow-down:before											{ content: "\e918"; }
+a.arrow-left:before											{ content: "\e919"; }
+a.arrow-right:after											{ content: "\e91a"; }
+/* Back to top of page */
+a.top:before												{ content: "\e921"; margin-right: 0; }
+a.top2:before												{ content: "\e921"; }
+/* Big button images */
+.delete-icon:before											{ content: "\e908"; }
+.dropdown-select:after										{ content: "\e909"; }
+.edit-icon:before											{ content: "\e900"; }
+.forward-icon:before										{ content: "\e90a"; }
+.info-icon:before											{ content: "\e90b"; }
+.locked-icon:before 											{ content: "\e90c"; }
+.modtools-icon:before										{ content: "\e90d"; }
+.post-icon:before 											{ content: "\e90e"; }
+.quote-icon:before											{ content: "\e90f"; }
+.reply-icon:before											{ content: "\e910"; }
+.report-icon:before											{ content: "\e911"; }
+.responsive-menu-link:before								{ content: "\e912"; }
+.search-adv-icon:before										{ content: "\e913"; }
+.search-icon:before											{ content: "\e915"; }
+.sort-icon:before											{ content: "\e916"; }
+.tools-icon:before											{ content: "\e917"; }
+.warn-icon:before											{ content: "\e945"; }
+li.breadcrumbs span:first-child > a:before 						{ content: "\e902"; } /* icon home */
+/* Content Styles */
+ul.topiclist li.row dt a.subforum:before {
+	font-size: 12px;
+	margin-left: -13px;
+	margin-top: 2px;
+	position: absolute;
+}
+ul.topiclist li.row dt a.subforum.read:before					{ content: "\e91f";}
+ul.topiclist li.row dt a.subforum.unread:before					{ content: "\e91f"; color: #5db2ff; }
+/* Feed icon in forumlist_body.html */
+a.feed-icon-forum:before									{ content: "\e983"; font-size: 18px; }
+/* Forum icons & Topic icons */
+.topiclist .icon:before,
+.topiclist .icon:after {	
+	font-size: 18px !important;
+    left: 10px;
+    padding: 9px;
+    position: absolute;
+	top: 7px;
+}
+.global_read:before,
+.global_read_mine:before,
+.global_unread:before,
+.global_unread_mine:before									{ content: "\e907"; }
+.global_read_locked:before,
+.global_read_locked_mine:before,
+.global_unread_locked:before,
+.global_unread_locked_mine:before							{ content: "\e90c"; }
+
+.announce_read:before,
+.announce_read_mine:before,
+.announce_unread:before,
+.announce_unread_mine:before								{ content: "\e907"; }
+.announce_read_locked:before,
+.announce_read_locked_mine:before,
+.announce_unread_locked:before,
+.announce_unread_locked_mine:before							{ content: "\e90c"; }
+
+.icon.forum_link:before										{ content: "\e904"; }
+.forum_read:before,
+.forum_read_subforum:before,
+.forum_unread:before,
+.forum_unread_subforum:before								{ content: "\e91f"; }
+.forum_read_locked:before,
+.forum_unread_locked:before									{ content: "\e90c"; }
+
+.sticky_read:before,
+.sticky_read_mine:before,
+.sticky_unread:before,
+.sticky_unread_mine:before									{ content: "\e907"; }
+.sticky_read_locked:before,
+.sticky_read_locked_mine:before,
+.sticky_unread_locked:before,
+.sticky_unread_locked_mine:before							{ content: "\e90c"; }
+
+.topic_moved:before											{ content: "\e903"; }
+.topic_read:before,
+.topic_read_mine:before,
+.topic_unread:before										{ content: "\e91f"; }
+.topic_read_hot:before,
+.topic_read_hot_mine:before,
+.topic_unread_mine:before,
+.topic_unread_hot:before,
+.topic_unread_hot_mine:before								{ content: "\e906"; }
+.topic_read_locked:before,
+.topic_read_locked_mine:before,
+.topic_unread_locked:before,
+.topic_unread_locked_mine:before							{ content: "\e90c"; }
+
+.pm_read:before,
+.pm_unread:before											{ content: "\e925"; }
+
+.global_read_mine:after,
+.global_read_locked_mine:after,
+.global_unread_mine:after,
+.global_unread_locked_mine:after,
+.announce_read_mine:after,
+.announce_read_locked_mine:after,
+.announce_unread_mine:after,
+.announce_unread_locked_mine:after,
+.sticky_read_mine:after,
+.sticky_read_locked_mine:after,
+.sticky_unread_mine:after,
+.sticky_unread_locked_mine:after,
+.topic_read_mine:after,
+.topic_read_hot_mine:after,
+.topic_read_locked_mine:after,
+.topic_unread_mine:after,
+.topic_unread_hot_mine:after,
+.topic_unread_locked_mine:after								{ content: "\e955"; }
+/* Global imageset items */
+.imageset.icon_contact:before,
+.imageset.icon_topic_deleted:before,
+.imageset.icon_topic_reported:before,
+.imageset.icon_topic_unapproved:before {
+	font-size: 16px;
+	position: absolute;
+	margin-left: -16px;
+	margin-top: -14px;
+}
+.imageset.icon_contact:before								{ content: "\e924"; }
+.imageset.icon_topic_deleted:before							{ content: "\e940"; }
+.imageset.icon_topic_reported:before						{ content: "\e942"; }
+.imageset.icon_topic_unapproved:before						{ content: "\e97f"; }
+.imageset.icon_topic_latest:before,
+.imageset.icon_topic_newest:before,
+.imageset.icon_topic_poll:before {
+	font-size: 12px;
+	position: absolute;
+	margin-left: -12px;
+	margin-top: -10px;
+}
+.imageset.icon_topic_latest:before							{ content: "\e91f";}
+.imageset.icon_topic_newest:before 							{ content: "\e91f"; color: #5db2ff; }
+.imageset.icon_topic_poll:before							{ content: "\e941";}
+.imageset.icon_topic_attach:before {
+	font-size: 12px;
+	position: absolute;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+.imageset.icon_topic_attach:before							{ content: "\e982";}
+.imageset.icon_post_target:before,
+.imageset.icon_post_target_unread:before {
+	font-size: 12px;
+	position: absolute;
+	margin-left: -14px;
+	margin-top: -8px;
+}
+.imageset.icon_post_target:before							{ content: "\e91f";}
+.imageset.icon_post_target_unread:before					{ content: "\e91f"; color: #5db2ff; }
+/* Icon images */
+.small-icon a {
+	padding: 0;
+	text-decoration: none; 
+}
+.small-icon[class^="icon-"], .small-icon[class*="icon-"],
+.responsive-search a {
+	background-image: none;
+}
+.icon-acp a:before											{ content: "\e920"; }
+.icon-bookmark a:before										{ content: "\e923"; }
+.icon-bump a:before											{ content: "\e93f"; }
+.icon-contact a:before										{ content: "\e93b"; }
+.icon-delete-cookies a:before								{ content: "\e926"; }
+.icon-faq a:before											{ content: "\e901"; }
+.icon-logout a:before										{ content: "\e929"; }
+.icon-mark a:before											{ content: "\e92b"; }
+.icon-mark-head a:before										{ content: "\e905"; }
+.icon-mcp a:before											{ content: "\e92c"; }
+.icon-members a:before										{ content: "\e92d"; }
+.icon-notification > a:before								{ content: "\e92e"; }
+.icon-pm > a:before											{ content: "\e930"; }
+.icon-print a:before											{ content: "\e932"; }
+.icon-profile a:before										{ content: "\e933"; }
+.icon-register a:before										{ content: "\e938"; }
+.icon-search a:before										{ content: "\e93a"; }
+.icon-search-active a:before									{ content: "\e91f"; }
+.icon-search-new a:before									{ content: "\e91f"; color: #5db2ff; }
+.icon-search-self a:before									{ content: "\e91f"; }
+.icon-search-unanswered a:before								{ content: "\e91f"; }
+.icon-search-unread a:before									{ content: "\e91f"; color: #5db2ff; }
+.icon-sendemail a:before										{ content: "\e93c"; }
+.icon-subscribe a:before										{ content: "\e93d"; }
+.icon-team a:before											{ content: "\e93e"; }
+.icon-ucp a:before											{ content: "\e943"; }
+.icon-unsubscribe a:before									{ content: "\e944"; }
+.icon-user-warn a:before										{ content: "\e945"; }
+.responsive-search a:before									{ content: "\e93a"; }
+/* Miscellaneous styles */
+.post-notice.deleted:before,
+.post-notice.unapproved:before,
+.post-notice.reported:before {
+	color: #5db2ff;
+	font-size: 16px;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.post-notice.deleted:before									{ content: "\e940"; }
+.post-notice.reported:before								{ content: "\e942"; }
+.post-notice.unapproved:before								{ content: "\e97f"; }
+/* Notification mark read link */
+.dropdown-extended a.mark_read:before						{ content: "\e92b"; }
+/* Pagination */
+.page-jump a:before											{ content: "\e95b"; }
+.previous a:before											{ content: "\e95d"; }
+.next a:before												{ content: "\e95e"; }
+/* Profile icons */
+.pm-icon:before												{ content: "\e925";}
+.email-icon:before											{ content: "\e93b";}
+.jabber-icon:before											{ content: "\e964";}
+.phpbb_icq-icon:before										{ content: "\e975";}
+.phpbb_wlm-icon:before										{ content: "\e958";}
+.phpbb_aol-icon:before										{ content: "\e959";}
+.phpbb_website-icon:before									{ content: "\e956";}
+.phpbb_youtube-icon:before									{ content: "\e95f";}
+.phpbb_facebook-icon:before									{ content: "\e965";}
+.phpbb_googleplus-icon:before								{ content: "\e96f";}
+.phpbb_skype-icon:before									{ content: "\e97b";}
+.phpbb_twitter-icon:before									{ content: "\e961";}
+.phpbb_yahoo-icon:before									{ content: "\e976";}
+/* Quote block */
+blockquote:before, .rtl blockquote:before {
+	margin-left: 0px;
+	margin-top: 0px;
+	position: absolute;
+	}
+blockquote:before 												{ content: "\e947";}	
+.rtl blockquote:before 										{ content: "\f10e";}
+/* Socialinks */
+.socialicon a:before {	
+	font-size: 26px !important;
+}
+.icon-blogger:before 										{ content: "\e95a"; }
+.icon-dailymotion:before 									{ content: "\e971"; }
+.icon-facebook:before 										{ content: "\e965"; }
+.icon-flickr:before 											{ content: "\e972"; }
+.icon-googleplus:before 										{ content: "\e96f"; }
+.icon-instagram:before 										{ content: "\e960"; }
+.icon-line:before 											{ content: "\e91d"; }
+.icon-linkedin:before 										{ content: "\e973"; }
+.icon-myspace:before 										{ content: "\e974"; }
+.icon-pinterest:before 										{ content: "\e962"; }
+.icon-reddit:before 											{ content: "\e97a"; }
+.icon-skype:before 											{ content: "\e97b"; }
+.icon-snapchat:before 										{ content: "\e97c"; }
+.icon-soundcloud:before 										{ content: "\e96a"; }
+.icon-steam:before 											{ content: "\e967"; }
+.icon-tumblr:before 											{ content: "\e964"; }
+.icon-twitter:before 										{ content: "\e981"; }
+.icon-viber:before 											{ content: "\e97e"; }
+.icon-whatsapp:before 										{ content: "\e95c"; }
+.icon-wordpress:before 										{ content: "\e978"; }
+.icon-youtube:before 										{ content: "\e963"; }

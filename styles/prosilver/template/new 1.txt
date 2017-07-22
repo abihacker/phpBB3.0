@@ -1,0 +1,18 @@
+<div id="nav">
+	<div class="mainwidth">
+		<div id="chtibouton"></div><ul class="jaja">
+			<li id="nav1"><a href="http://www.phpbb-fr.com/" title="Home sweet home...">Accueil</a></li>
+			<li id="nav2"><a href="http://forums.phpbb-fr.com/" title="Le bon plan pour avoir du support&nbsp;!">Forum</a></li>
+			<li id="nav3"><a href="http://www.phpbb-fr.com/customise/db/" title="T’as envie de faire du tuning&nbsp;?">Personnaliser</a></li>
+			<li id="nav4"><a href="http://forums.phpbb-fr.com/documentation/" title="La bible de phpBB-fr.com&nbsp;!">Documentation</a></li>
+			<li id="nav5"><a href="http://www.phpbb-fr.com/telechargements/" title="Cherche pas, ici y a pas de torrents&nbsp;!">Téléchargements</a></li>
+			<li id="nav6"><a href="http://www.phpbb-fr.com/partenaires/" title="Nos zamis">Partenaires</a></li>
+			<li id="nav7"><a href="http://forums.phpbb-fr.com/search.php" title="Voir les options de recherche avancée">Rechercher</a></li>
+		</ul>
+		
+			<div id="searchbox">
+				<form id="searchposition" method="get" action="http://forums.phpbb-fr.com/documentation/recherche/">
+					<p>
+					<input name="keywords" id="searchcolor" maxlength="128" onblur="if(this.value=='')this.value='Recherche d’article…';" onclick="if(this.value=='Recherche d’article…')this.value='';" value="Recherche d’article…" title="Recherche par mots-clés" type="text">
+					<input value="" class="buttontransparent" title="Lancer la recherche" type="submit">
+<?php

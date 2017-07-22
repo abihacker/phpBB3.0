@@ -1,0 +1,1 @@
+<?php if (!defined('IN_PHPBB')) exit; echo (isset($this->_rootref['WELCOME'])) ? $this->_rootref['WELCOME'] : ''; ?>

@@ -1,0 +1,316 @@
+/*
+--------------------------------------------------------------
+Colours and backgrounds for common.css
+-------------------------------------------------------------- */
+
+html, body {
+	background: #14139D url("./images/bg-body.jpg") no-repeat 50% 100% fixed;
+	background-size: cover;
+}
+
+h3 {
+	color: #547aa9;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for links.css
+-------------------------------------------------------------- */
+
+a { color: #547aa9; }
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.wrap {
+	background-color: #faf4fb;
+}
+
+.headerbar {
+	background-color: #385f98;
+	background-image: -webkit-linear-gradient(top, #172a53 0%,#1c325d 20%,#315389 74%,#385f98 100%);
+	background-image: linear-gradient(to bottom, #172a53 0%,#1c325d 20%,#315389 74%,#385f98 100%);
+	background-size: auto 130px;
+}
+
+.forabg, .forumbg {
+	background-color: #172952;
+	background-image: -webkit-linear-gradient(top, #3a5f98 0%,#33548a 4%,#325187 7%,#2d4b80 8%,#2f4b7e 9%,#2e4778 10%,#263e6d 14%,#233969 18%,#1a2f5a 22%,#192c57 24%,#172951 25%,#172952 100%);
+	background-image: linear-gradient(to bottom, #3a5f98 0%,#33548a 4%,#325187 7%,#2d4b80 8%,#2f4b7e 9%,#2e4778 10%,#263e6d 14%,#233969 18%,#1a2f5a 22%,#192c57 24%,#172951 25%,#172952 100%);
+	background-size: auto 92px;
+}
+
+.navbar {
+	background-image: url("./images/carbon.jpg");
+}
+
+.panel {
+	background-color: #cadceb;
+}
+
+.bg1 {
+	background-color: #a5cce7;
+}
+
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: #a5cce7;
+}
+
+.bg2 {
+	background-color: #a5cce7;
+}
+
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: #a5cce7;
+}
+
+.site_logo {
+	background-image: url("./images/site_logo.png");
+	width: 234px;
+	height: 42px;
+}
+
+/* Horizontal lists
+----------------------------------------*/
+ul.navlinks {
+	border-top-color: #302f2e;
+}
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+	border-top-color: #081EFC;
+}
+
+.jumpbox-cat-link {
+	background-color: #050c55;
+	border-top-color: #081EFC;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #050c55;
+	border-top-color: #12A3EB;
+}
+
+.jumpbox-forum-link {
+	background-color: #050c55;
+}
+
+.jumpbox-forum-link:hover {
+	background-color: #050c55;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #050c55 transparent;
+}
+
+.jumpbox-sub-link {
+	background-color: #050c55;
+}
+
+.jumpbox-sub-link:hover {
+	background-color: #050c55;
+}
+
+.jumpbox-cat-link, .jumpbox-sub-link, .jumpbox-forum-link {
+	color: #cccaca;
+	transition: all 0.5s ease 0s;
+}
+
+.jumpbox-cat-link:hover, .jumpbox-sub-link:hover, .jumpbox-forum-link:hover {
+   color: #fff;
+   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for content.css
+-------------------------------------------------------------- */
+
+ul.forums {
+	border-top: 4px solid #fe8207;
+}
+
+li.row {
+	border-bottom-color: #bccfde;
+	background-color: #EEF5F9;
+	background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
+	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */
+	background-size: auto 60px;
+	background-repeat: repeat-x;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+blockquote {
+	background-color: #D3D7FF;
+	border: 1px dashed #0e45cd;
+    border-radius: 10px;
+}
+
+blockquote blockquote {
+	/* Nested quotes */
+	background-color:#D0E2F8;
+}
+
+blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #B4BEF5;
+}
+
+/* Code block */
+.codebox {
+    background-color: #b8d9f4;
+    border: 1px dashed #7372f7;
+    border-radius: 10px;
+}
+
+.codebox p {
+	border-bottom: 1px dashed #5675f9;
+}
+
+.codebox code {
+	color: #000904;
+}
+
+/* jQuery popups
+---------------------------------------- */
+
+.dropdown-extended ul li {
+	border-top-color: #4a48f9 ;
+}
+
+.dropdown-extended ul li:hover {
+	background-color: transparent;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer {
+	border-color: #4a48f9 ;
+	color: #cccaca;
+}
+
+.dropdown-extended .header {
+	background-color: #10365e; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #10365e 0%, #485196 100%);
+	background-image: linear-gradient(to bottom, #10365e 0%, #485196 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10365e', endColorstr='#485196',GradientType=0 ); /* IE6-9 */
+}
+
+.dropdown .pointer {
+	border-color: #4a48f9 transparent;
+}
+
+.dropdown .pointer-inner {
+	border-color: #050c55 transparent;
+}
+
+.dropdown-extended .pointer-inner {
+	border-color: #10365e transparent;
+}
+
+.dropdown .dropdown-contents {
+	background: #050c55  ;
+	border-color: #4a48f9;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-up .dropdown-contents {
+	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li, .dropdown li li {
+	border-color: #081EFC;
+}
+
+.dropdown li.separator {
+	border-color: #081EFC;
+}
+
+/* Notifications
+---------------------------------------- */
+
+.notification_list p.notification-time {
+	color: #7b889d;
+}
+
+li.notification-reported strong, li.notification-disapproved strong {
+	color: #D31141;
+}
+
+.badge {
+	background-color: #D31141;
+	color: #ffffff;
+}
+
+/* Additionnals css for Pro-Sub-blue by sub60 
+-----------------------------------------------------*/
+
+.forabg {
+    padding: 6px 0;
+}
+
+.headerbar {
+	border-radius: 0 0 7px 7px;
+}
+
+li.header dl.row-item dt .list-inner {
+    padding-left: 10px;
+}
+
+ul.topics {
+    border-top: 4px solid #fe8207;
+}
+
+.navbar a {
+    color: #cccaca;
+	transition: all 0.5s ease 0s;
+}
+
+.navbar a:hover {
+   text-decoration: none;
+   color: #fff;
+   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+/* Menu-Top link Option */
+.menu-link { 
+    border-bottom: 4px solid #59446A;
+    border-radius: 7px 7px 0 0;
+    margin: 0;
+    padding: 10px;
+	background-color: #182C55;
+} 
+
+.menu-link ul {
+   list-style-type: none;
+}
+
+.menu-link li { 
+    display: inline-block; 
+    padding: 0 15px; 
+}
+
+.menu-link a {
+	color: #cccaca;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	display: inline;
+}  
+
+.menu-link a:hover {
+   color: #fff;
+   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+   border-bottom: 4px solid #fe8207;
+   padding: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+	.headerbar, .menu-link {
+		border-radius: 0;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+}

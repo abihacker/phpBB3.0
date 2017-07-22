@@ -1,0 +1,22 @@
+<!-- IF not S_IS_BOT and (U_MARK_FORUMS or U_MARK_TOPICS)-->
+	<div class="dropdown-container dropdown-button-control topic-tools">
+		<span class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<!-- IF U_WATCH_FORUM_LINK -->
+					<li class="small-icon icon-<!-- IF S_WATCHING_FORUM -->unsubscribe<!-- ELSE -->subscribe<!-- ENDIF -->">
+						<a href="{U_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}" data-ajax="toggle_link" data-toggle-class="small-icon icon-<!-- IF not S_WATCHING_FORUM -->unsubscribe<!-- ELSE -->subscribe<!-- ENDIF -->" data-toggle-text="{S_WATCH_FORUM_TOGGLE}" data-toggle-url="{U_WATCH_FORUM_TOGGLE}">{S_WATCH_FORUM_TITLE}</a>
+					</li>
+				<!-- ENDIF -->
+				<!-- IF not S_IS_BOT and U_MARK_TOPICS and .topicrow -->
+					<li class="small-icon icon-mark">
+						<a href="{U_MARK_TOPICS}" class="mark" accesskey="m" data-ajax="mark_topics_read">{L_MARK_TOPICS_READ}</a>
+					</li>
+				<!-- ENDIF -->
+			<!-- EVENT viewtopic_topic_tools_after -->
+			</ul>
+		</div>
+	</div>
+<!-- ENDIF -->
+
