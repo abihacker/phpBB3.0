@@ -9,7 +9,7 @@ $user->setup();
 
 page_header();
 $template->set_filenames(array(
-	'body' => 'documentation_forum.html',
+	'body' => 'sapFI.html',
 	'common_bloc' => 'common_bloc.html'
 ));
 include($phpbb_root_path.'welcome.'.$phpEx);
